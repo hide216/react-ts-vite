@@ -1,5 +1,4 @@
 // src/components/Header.jsx
-import React from "react";
 import {
   AppBar,
   Toolbar,

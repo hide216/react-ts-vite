@@ -1,9 +1,19 @@
-import React from "@react";
 import { Box, Container, Typography } from "@mui/material";
 import MovieList from "../MovieList";
 import Header from "../Header";
+interface Movie {
+  id: number;
+  title: string;
+  year: string;
+  poster: string;
+  // もし必要なら追加
+}
 
-export function Home({ movies }) {
+interface HomeProps {
+  movies: Movie[];
+}
+
+export function Home({ movies }: HomeProps) {
   return (
     <>
       <Header />

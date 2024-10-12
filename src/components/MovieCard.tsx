@@ -1,5 +1,3 @@
-// src/components/MovieCard.jsx
-import React from "react";
 import {
   Card,
   CardMedia,
@@ -9,7 +7,18 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const MovieCard = ({ movie }) => {
+interface Movie {
+  id: number;
+  title: string;
+  year: string;
+  poster: string;
+  // 映画詳細ページのリンク
+}
+
+interface MovieCardProps {
+  movie: Movie;
+}
+const MovieCard = ({ movie }: MovieCardProps) => {
   return (
     <Card sx={{ maxWidth: 200, margin: 1 }}>
       <Button component={Link} to="/video" sx={{ padding: 0 }}>

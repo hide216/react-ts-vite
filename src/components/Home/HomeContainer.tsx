@@ -1,11 +1,12 @@
 import Home from "./Home";
 
-type Movie = {
+interface Movie {
   id: number;
   title: string;
   year: string;
   poster: string;
-};
+}
+
 export function HomeContainer() {
   const movies: Movie[] = [
     {

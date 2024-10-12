@@ -1,8 +1,11 @@
-// src/components/VideoPlayer.jsx
-import React from "react";
 import { Box, Typography } from "@mui/material";
+interface VideoPlayerProps {
+  title: string;
+  description: string;
+  videoSrc: string; // MP4動画のURL
+}
 
-const VideoPlayer = ({ title, description, videoSrc }) => {
+const VideoPlayer = ({ title, description, videoSrc }: VideoPlayerProps) => {
   return (
     <Box sx={{ padding: 2, backgroundColor: "#141414", color: "white" }}>
       <Typography variant="h4" align="center" sx={{ marginBottom: 2 }}>

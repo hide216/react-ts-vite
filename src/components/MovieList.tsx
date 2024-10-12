@@ -1,8 +1,19 @@
-import React from "react";
 import { Grid } from "@mui/material";
 import MovieCard from "./MovieCard";
 
-const MovieList = ({ movies }) => {
+interface Movie {
+  id: number;
+  title: string;
+  year: string;
+  poster: string;
+  // もし必要なら追加
+}
+
+interface MovieListProps {
+  movies: Movie[];
+}
+
+const MovieList = ({ movies }: MovieListProps) => {
   return (
     <>
       <Grid container justifyContent="center">
