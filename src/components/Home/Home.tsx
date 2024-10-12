@@ -1,21 +1,33 @@
-export function Home() {
+import React from "@react";
+import { Box, Container, Typography } from "@mui/material";
+import MovieList from "../MovieList";
+import Header from "../Header";
+
+export function Home({ movies }) {
   return (
     <>
-      <div>
-        <h1>Home</h1>
-        <div className="card">
-          <p>
-            <a href="/Events">・Events</a>
-          </p>
-          <p>
-            <a href="/Todo">・Todo</a>
-          </p>
-          <p>
-            <a href="/About">・About</a>
-          </p>
-        </div>
-        <p className="read-the-docs">リンク先の画面を開発してください。</p>
-      </div>
+      <Header />
+      <Container>
+        <Box sx={{ display: "flex", alignItems: "center", margin: 2 }}>
+          <Typography variant="h6" sx={{ color: "#B0B0B0", marginRight: 2 }}>
+            こちらでも探す：
+          </Typography>
+          <Box
+            sx={{
+              display: "grid",
+              gap: 2,
+              color: "white",
+            }}
+          >
+            <Typography>
+              ちいかわ | おぱんちゅうさぎ | ミニオンズ | スヌーピー |
+              となりのトトロ | 愛の不時着 | トムとジェリー
+            </Typography>
+          </Box>
+        </Box>
+
+        <MovieList movies={movies} />
+      </Container>
     </>
   );
 }
