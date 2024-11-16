@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
-import MovieList from "../MovieList";
-import Header from "../Header";
+import MovieList from "../MoviesParts/MovieList";
+import Header from "./Header";
 interface Movie {
   id: number;
   title: string;
