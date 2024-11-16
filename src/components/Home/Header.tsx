@@ -11,6 +11,8 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { styled } from "@mui/system";
+import { FaFaceGrinSquint } from "react-icons/fa6";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -68,6 +70,10 @@ const Header = () => {
         </Search>
         <IconButton color="inherit" sx={{ marginLeft: 2 }}>
           <NotificationsIcon />
+        </IconButton>
+        <IconButton color="inherit" sx={{ marginLeft: 2 }}>
+          <FaFaceGrinSquint />
+          <IoMdArrowDropdown />
         </IconButton>
       </Toolbar>
     </AppBar>
