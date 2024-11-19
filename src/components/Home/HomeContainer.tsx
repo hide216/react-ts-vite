@@ -13,25 +13,25 @@ export function HomeContainer() {
       id: 1,
       title: "Movie 1",
       year: "2021",
-      poster: "https://via.placeholder.com/200x300",
+      poster: "../../200x300.png",
     },
     {
       id: 2,
       title: "Movie 2",
       year: "2022",
-      poster: "https://via.placeholder.com/200x300",
+      poster: "../../200x300.png",
     },
     {
       id: 3,
       title: "Movie 3",
       year: "2023",
-      poster: "https://via.placeholder.com/200x300",
+      poster: "../../200x300.png",
     },
     {
       id: 4,
       title: "Movie 4",
       year: "2021",
-      poster: "https://via.placeholder.com/200x300",
+      poster: "../../200x300.png",
     },
 
     // 他の映画データを追加
